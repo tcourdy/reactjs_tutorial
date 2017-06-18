@@ -115,8 +115,7 @@ class Game extends React.Component {
         var moveDescript = "";
         if(move) {
             var prevState = history[move - 1];
-            moveDescript = "Move" + this.createMoveDescript
-            (
+            moveDescript = "Move" + this.createMoveDescript(
                 prevState.squares,
                 step.squares
             );
